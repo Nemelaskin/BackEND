@@ -59,7 +59,6 @@ namespace BackEND.Controllers
                 Console.WriteLine(E);
                 return "Not OK";
             }
-            
         }
 
         public string Group(string NameComand, string Desc)

@@ -14,7 +14,6 @@ namespace BackEND.Socket
 {
     public class WebSocketConn
     {
-
         public static byte[] bytesPhoto;
 
         public static Func<HttpContext, Func<Task>, Task> WebSocketConnect()
@@ -30,10 +29,6 @@ namespace BackEND.Socket
                         {
                             byte[] bt = new byte[1024];
                             System.Net.WebSockets.WebSocketReceiveResult rc = await Program.wb.ReceiveAsync(bt, CancellationToken.None);
-                            //string txt = System.Text.Encoding.UTF8.GetString(bt);
-                            //Console.WriteLine(txt);
-                            //await Program.wb.SendAsync(System.Text.Encoding.UTF8.GetBytes("АДНРЕЙ"), System.Net.WebSockets.WebSocketMessageType.Text, true, CancellationToken.None);
-                            //System.Text.Encoding.UTF8.GetBytes("АДНРЕЙ"),
                         }
                     });
                 }

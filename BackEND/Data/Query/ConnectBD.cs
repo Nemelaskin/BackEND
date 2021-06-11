@@ -26,13 +26,4 @@ namespace BackEND.Data.Query
             var temp = doBD(_query, cnn);
             return temp;
         }
-
-
-        /*public void test() {
-            var temp = doBD("SELECT * FROM Point",cnn);
-            DataRow[] rows = temp.Tables[0].Select();
-            string str = rows[0].ItemArray[0].ToString();
-            int d = 2;
-        }*/
-    }
 }
